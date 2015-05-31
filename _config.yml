@@ -1,2 +1,18 @@
-name: Zhuxiangrong
-description: blog
+# Site settings
+title: 我的博客
+email: zhuxiangrong2008@yeah.net
+description: "Site Description"
+logo_location: "http://placehold.it/100x100&text=LOGO"
+
+#baseurl: "" # the subpath of your site, e.g. /blog/
+#url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+highlighter: pygments
+
+#Other Global Configuration
+exclude: ['README.md']
