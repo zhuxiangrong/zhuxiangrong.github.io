@@ -1,8 +1,8 @@
 # Site settings
-title: 我的博客
+title: My Garden
 email: zhuxiangrong2008@yeah.net
 description: "Site Description"
-logo_location: "http://placehold.it/100x100&text=LOGO"
+logo_location: "/assets/mylogo2.png"
 
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site

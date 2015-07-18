@@ -1,13 +1,11 @@
 ---
 layout: post
-tags: hadoop hive
+tags: 工具 hive
 date: 2014-07-12 21:06
 title: HIVE中随机选择样本
 published: true
 ---
 
-# HIVE中随机选择样本
-数据存在HIVE中，HIVE的能力完全能hold住我的数据量。之所以研究如何用HIVE做抽样，是正负样本不均衡，我要在过多的正样本中抽取出一部分出来。
 用HIVE做随机抽样的代码是下面这个样子的：
 
 	select	id from mytable

@@ -24,9 +24,12 @@ body {
 
 
 /*navbar stuff*/
+.logo-image{
+    margin-left:10px;
+}
 .name-holder{
   padding:10px;
-  color: #002E62;
+  color: #000000;
 }
 
 
