@@ -5,7 +5,9 @@ date: 2014-07-12 21:06
 title: HIVE中随机选择样本
 published: true
 ---
-
+###
+test
+###
 用HIVE做随机抽样的代码是下面这个样子的：
 
 	select	id from mytable
