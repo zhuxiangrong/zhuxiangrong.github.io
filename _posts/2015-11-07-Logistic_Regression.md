@@ -1,3 +1,11 @@
+---
+layout: post
+tags: machine learning
+date: 2015-11-07 18:30
+title: Logistic Regression
+published: true
+---
+
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 ## Logistic Regression ##
 ###简介###
