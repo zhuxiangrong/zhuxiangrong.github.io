@@ -1,5 +1,5 @@
 # Site settings
-title: My Garden
+title: My Grocery
 email: zhuxiangrong2008@yeah.net
 description: "Site Description"
 logo_location: "/assets/mylogo2.png"
@@ -8,9 +8,10 @@ logo_location: "/assets/mylogo2.png"
 #url: "" # the base hostname & protocol for your site
 
 # Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
+#markdown: kramdown
+#kramdown:
+#  input: GFM
+markdown: redcarpet
 
 highlighter: pygments
 
