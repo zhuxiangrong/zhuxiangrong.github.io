@@ -10,16 +10,24 @@ published: true
 ###简介###
 Logistic Regression，虽然叫做regression，但是它只是借鉴了回归的思想，主要用于分类问题。
 ###算法###
-Logistic Regression按照linear regression的方式做分类。要拟合的值是离散的0和1，所以用sigmoid函数将值域限制在0-1之间。sigmoid函数公式：
-$$ g(z)=\frac{1}{1+e^{-z}}$$ 这是一个取值在0到1之间连续函数：
+Logit函数:$$logit(p)=log(\frac{p}{1-p})=log(p)-log(1-p) $$ 
+transforms x to y values along the entire real line.
+
+Inverse-logit函数:$$logit^{-1}=\frac{1}{1+e^{-t}}$$
+take x values along the real line and transforms them to y values in range [0,1].
+
+Inverse-logit函数(sigmoid函数)这是一个取值在0到1之间连续函数：
 
 <img src="/assets/image/sigmoid.png" alt="sigmoid" width="300" height="250">
 
-logistic regress的假设函数为\\(h\_\theta(x)=\frac{1}{1+e^{-\theta^Tx}}\\),并把它看作是y=1的概率。的确，x偏离平面\\(\theta^Tx=0\\)越远，\\(h\_\theta(x)\\)越接近1或者0。因此假设：
+logistic regression模型将正负无穷区间的线性函数\\(\theta^Tx\\)通过inverse-logit函数映射到[0,1]区间，作为y=1的概率。 
+
+假设函数为\\(h\_\theta(x)=\frac{1}{1+e^{-\theta^Tx}}\\)（尝试将这个函数应用到Logit函数，会得到\\(logit(h\_\theta(x))=\theta^Tx\\)），那么：
 $$P(y=1|x;\theta) = h\_\theta(x)$$
 $$P(y=0|x;\theta) = 1-h\_\theta(x)$$
 以上两个式子可以综合写为：
 $$p(y|x;\theta) = (h\_\theta(x))^y(1-h\_\theta(x))^{(1-y)}$$
+
 目标函数为最大化概率：
 $$ L(\theta)=\prod\_{i=1}^{m}{p(y|x^{(i)};\theta)}
 			  =\prod\_{i=1}^{m}{(h\_\theta(x^i))^y{^i}(1-h\_\theta(x^i))^{(1-y^i)}}$$
