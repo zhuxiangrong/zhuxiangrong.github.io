@@ -6,7 +6,7 @@ title: Spark中将RDD转化为DataFrame的方法
 published: true
 ---
 
-把RDD转化为DataFrame的两种方法
+把RDD转化为DataFrame的两种方法:
 ####方法1:通过case class 或者 Tuple
 scala中的Tuple绝对是个奇葩的存在，用惯了python的tuple，会感觉很别扭。Scala中的Tuple其实是case class类型的，理解了这个，也就理解了Tuple的不太“寻常”的用法。言归正传，把一个RDD变成一个DataFrame，其中一个比较简单的方法就是把RDD变成RDD[Tuple]。
 
