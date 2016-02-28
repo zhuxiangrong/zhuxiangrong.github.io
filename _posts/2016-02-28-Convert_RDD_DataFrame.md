@@ -2,7 +2,7 @@
 layout: post
 tags: spark scala
 date: 2016-02-28 15:13
-title: Spark中将RDD转化为DataFrame的方法
+title: convert rdd to dataframe 
 published: true
 ---
 
@@ -44,4 +44,3 @@ val myRDD2 = myRDD.map(row => Row(row(0),row(1),row(2))) //生成RDD[Row]
 val schema = StructType(for(colName <- myCols) yield StructField(colName,IntegerType,true))
 val myDF = sqlCont.createDataFrame(resultData,schema)
 ```
-
