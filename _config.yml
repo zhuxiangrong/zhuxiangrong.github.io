@@ -8,10 +8,10 @@ logo_location: "/assets/mylogo2.png"
 #url: "" # the base hostname & protocol for your site
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown
 #kramdown:
 #  input: GFM
-markdown: redcarpet
+#markdown: redcarpet
 
 highlighter: pygments
 
