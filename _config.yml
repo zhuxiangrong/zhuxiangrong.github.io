@@ -13,7 +13,8 @@ markdown: kramdown
 #  input: GFM
 #markdown: redcarpet
 
-highlighter: pygments
+#highlighter: pygments
+highlighter: rouge
 
 #Other Global Configuration
 exclude: ['README.md']

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: 工具 hive
+tags: spark scala
 date: 2016-02-28 15:13
 title: Spark中将RDD转化为DataFrame的方法
 published: true
