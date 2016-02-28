@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: machine,learning
-date: 2015-11-07 18:30
+date: 2016-02-28 18:30
 title: Logistic Regression
 published: true
 ---
